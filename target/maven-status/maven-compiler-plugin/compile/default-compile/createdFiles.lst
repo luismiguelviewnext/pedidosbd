@@ -1,0 +1,7 @@
+com\curso\controller\PedidoController.class
+com\curso\dao\PedidosDao.class
+com\curso\service\PedidoService.class
+com\curso\service\PedidoServiceImpl.class
+com\curso\model\Pedido.class
+com\curso\model\Producto.class
+com\curso\pedidosbd\PedidosbdApplication.class
