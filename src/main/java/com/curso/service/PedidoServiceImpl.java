@@ -41,8 +41,8 @@ public class PedidoServiceImpl implements PedidoService {
             if (producto.getCodigoProducto() == pedido.getCodigoProducto()) {
                 // Actualizar el stock del producto
                
-                restTemplate.postForLocation("http://localhost:8080/producto/" + producto.getCodigoProducto() + "/" +  pedido.getUnidades(), producto);
-               // restTemplate.put("http://localhost:8080/producto/" + producto.getCodigoProducto() + "/" +  pedido.getUnidades(), producto);    
+               // restTemplate.postForLocation("http://localhost:8080/producto/" + producto.getCodigoProducto() + "/" +  pedido.getUnidades(), producto);
+                restTemplate.put("http://localhost:8080/producto/" + producto.getCodigoProducto() + "/" +  pedido.getUnidades(), producto);    
                 // Calcular el total y la fecha del pedido
                 pedido.setTotal(producto.getPrecioUnitario() * pedido.getUnidades());
                 pedido.setFecha(new Date());
